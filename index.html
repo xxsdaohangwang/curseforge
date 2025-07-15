@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr" class="dark">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>curseforge中文官网，全球最大游戏MOD资源和插件下载网站</title>
+  <meta name="keywords" content="curseforge，curseforge官网，curseforge入口，游戏MOD资源下载，热门游戏模组" />
+  <meta name="description" content="curseforge是全球最大的游戏MOD（模组）资源下载网站之一，为众多热门游戏社区提供服务。">
+
+  <link rel="shortcut icon" href="./files/curseforge.png">
+  <link rel="preload stylesheet" href="./files/style.9b4b7f3f.css" as="style">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#FF4D4F',
+            secondary: '#FF7A45',
+            dark: '#1E1E2E',
+            light: '#F5F5F5',
+            'dark-gray': '#4E4E5E',
+            'light-gray': '#E5E5E5'
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+          },
+        },
+      }
+    }
+  </script>
+  
+  <style type="text/tailwindcss">
+    @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+      }
+      .text-shadow {
+        text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      }
+      .nav-link {
+        @apply relative text-dark-gray hover:text-primary transition-colors duration-300;
+      }
+      .nav-link::after {
+        @apply content-[''] absolute w-0 h-0.5 bg-primary left-0 -bottom-1 transition-all duration-300;
+      }
+      .nav-link:hover::after {
+        @apply w-full;
+      }
+      .nav-link.active {
+        @apply text-primary font-medium;
+      }
+      .nav-link.active::after {
+        @apply w-full;
+      }
+      .btn-primary {
+        @apply bg-primary hover:bg-primary/90 text-white font-medium py-2 px-6 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5;
+      }
+      .btn-secondary {
+        @apply bg-white border border-primary text-primary hover:bg-primary/5 font-medium py-2 px-6 rounded-lg shadow-md hover:shadow-lg transition-all duration-300;
+      }
+      .feature-card {
+        @apply bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1;
+      }
+      .faq-title {
+        @apply text-[clamp(1.5rem,3vw,2rem)] font-bold text-dark mb-6;
+      }
+      .title {
+        @apply text-xl font-bold text-dark mb-3;
+      }
+      .details {
+        @apply text-dark-gray leading-relaxed;
+      }
+      .entry-card {
+        @apply bg-white rounded-xl p-6 shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 text-center;
+      }
+      .entry-icon {
+        @apply text-4xl mb-4;
+      }
+      .entry-title {
+        @apply text-lg font-bold mb-2;
+      }
+      .entry-desc {
+        @apply text-dark-gray text-sm mb-4;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app">
+    <nav id="navbar" class="fixed w-full top-0 z-50 transition-all duration-300 bg-white/90 backdrop-blur-md shadow-sm">
+      <div class="container mx-auto px-4 py-3 flex items-center justify-between">
+        <div class="flex items-center">
+          <span class="text-xl font-bold text-primary">curseforge</span>
+        </div>
+        
+        <div class="hidden md:flex space-x-8">
+          <a href="#home" class="nav-link active">首页</a>
+          <a href="#entries" class="nav-link">入口</a>
+          <a href="#introduction" class="nav-link">介绍</a>
+          <a href="#features" class="nav-link">特点</a>
+        </div>
+        
+        <button id="menu-toggle" class="md:hidden text-dark-gray hover:text-primary focus:outline-none">
+          <i class="fa-solid fa-bars text-2xl"></i>
+        </button>
+      </div>
+      
+      <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-light-gray shadow-md">
+        <div class="container mx-auto px-4 py-3 flex flex-col space-y-4">
+          <a href="#home" class="nav-link py-2 active">首页</a>
+          <a href="#entries" class="nav-link py-2">入口</a>
+          <a href="#introduction" class="nav-link py-2">介绍</a>
+          <a href="#features" class="nav-link py-2">特点</a>
+
+        </div>
+      </div>
+    </nav>
+
+    <div class="Layout" data-v-b2cf3e0b="">
+      <div class="VPContent is-home" id="VPContent" data-v-b2cf3e0b="" data-v-a494bd1d="">
+        <div id="home" class="VPHome pt-24" data-v-a494bd1d="" data-v-d82743a8="">
+          <div class="VPHero has-image VPHomeHero" data-v-d82743a8="" data-v-fd2650d5="">
+            <div class="container" data-v-fd2650d5="">
+              <div class="main" data-v-fd2650d5="">
+                <h1 class="name" data-v-fd2650d5="" style="display: flex; align-items: center; white-space: nowrap;">
+                  <span style="color:#111;">curseforge</span>
+                </h1>
+
+                <p class="text" data-v-fd2650d5="" style="line-height:1.2rem;margin:10px 0;"><span
+                    style="font-size:1.2rem;font-weight:400;"><strong>全球最大游戏MOD资源下载平台</strong></span><br /><span
+                    style="font-size:1rem;font-weight:400;">为众多热门游戏社区提供丰富的MOD资源下载服务</span></p>
+
+                <div class="actions" data-v-fd2650d5="">
+                  
+                </div>
+              </div>
+
+              <div class="image" data-v-fd2650d5=""><div class="image-container" data-v-fd2650d5=""><div
+                    class="image-bg" data-v-fd2650d5=""></div><img class="VPImage image-src"
+                    src="./files/curseforge.jpg" alt="curseforge" data-v-6db2186b=""
+                    style="border-radius:15px;background: #fff;padding: 5px;border: 1px solid #eee;"></div></div>
+
+          </div>
+        </div>
+
+        <div id="entries" class="VPFeatures VPHomeFeatures py-12" data-v-d82743a8="" data-v-ba861f23="">
+          <h2 class="faq-title" style="text-align: center; margin-bottom: 20px;">
+          </h2>
+          <div class="container" data-v-ba861f23="">
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6962852649727169"
+     crossorigin="anonymous"></script>
+<!-- 横向广告 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6962852649727169"
+     data-ad-slot="2494439074"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6" data-v-ba861f23="">
+              <div class="item" data-v-ba861f23="">
+                <span class="VPLink VPFeature" data-v-ba861f23="" data-v-837f6cca="" data-v-8f4dc553="">
+                  <article class="entry-card" data-v-837f6cca="">
+                    <h3 class="entry-title" data-v-837f6cca="">官网入口</h3>
+                    <p class="entry-desc" data-v-837f6cca="">访问curseforge官网获取更多游戏MOD资源，助您轻松提升游戏体验</p>
+                    <a href="https://www.curseforge.com/" target="_blank" class="btn-primary inline-block">
+                      访问官网
+                    </a>
+                  </article>
+                </span>
+              </div>
+              
+              <div class="item" data-v-ba861f23="">
+                <span class="VPLink VPFeature" data-v-ba861f23="" data-v-837f6cca="" data-v-8f4dc553="">
+                  <article class="entry-card" data-v-837f6cca="">
+                    <h3 class="entry-title" data-v-837f6cca="">curseforge客户端下载</h3>
+                    <p class="entry-desc" data-v-837f6cca="">通过客户端便捷管理游戏MOD和插件，如获取中文化的魔兽世界插件和指南</p>
+                    <a href="https://pan.quark.cn/s/caaef9f69f27" target="_blank" class="btn-primary inline-block">
+                      客户端下载
+                    </a>
+                  </article>
+                </span>
+              </div>
+
+              <div class="item" data-v-ba861f23="">
+                <span class="VPLink VPFeature" data-v-ba861f23="" data-v-837f6cca="" data-v-8f4dc553="">
+                  <article class="entry-card" data-v-837f6cca="">
+                    <h3 class="entry-title" data-v-837f6cca="">惊喜资源包</h3>
+                    <p class="entry-desc" data-v-837f6cca="">100W+电子书，2000+4K电影，3000+无损音乐，植物大战僵尸红警游戏下载</p>
+                    <a href="https://wangpanziyuan.pages.dev/" target="_blank" class="btn-primary inline-block">
+                      资源下载
+                    </a>
+                  </article>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+<br>
+
+        <div id="introduction" class="VPFeatures VPHomeFeatures" data-v-d82743a8="" data-v-ba861f23="">
+          <h2 class="faq-title" style="text-align: center; font-size: 24px; font-weight: bold; margin-bottom: 20px;">
+           curseforge介绍
+          </h2>
+          <div class="container" data-v-ba861f23="">
+            <div class="items" data-v-ba861f23="" style="margin-bottom: 40px;">
+              <div class="grid-1 item" data-v-ba861f23="">
+                <span class="VPLink VPFeature" data-v-ba861f23="" data-v-837f6cca="" data-v-8f4dc553="">
+                  <article class="box feature-card" data-v-837f6cca="">
+                    <p class="details" data-v-837f6cca="" style="font-size: 16px; line-height: 1.8;">
+                      curseforge 是全球最大的游戏 MOD（模组）资源下载网站之一，为众多热门游戏的社区提供服务，包括《我的世界》（Minecraft）、《魔兽世界》（World of Warcraft）、《模拟人生4》（The Sims 4）、《坎巴拉太空计划》（Kerbal Space Program）等。该平台每月有超过8亿次的 MOD 下载量，拥有超过1100万的活跃用户，是一个不断壮大的游戏爱好者社区。curseforge 不仅是一个资源下载平台，更是一个活跃的社区，玩家可以在这里找到各种游戏模组和插件，提升游戏体验，开发者则可以展示和分享自己的作品。
+                    </p>
+                    <p class="details" data-v-837f6cca="" style="font-size: 16px; line-height: 1.8; margin-top: 15px;">
+                      curseforge 提供了丰富的模组资源，涵盖了多种热门游戏。无论是改变游戏界面、优化游戏性能，还是提供各种工具和功能，curseforge 都能满足玩家的需求。此外，curseforge 还提供了强大的社区互动功能，用户可以对模组和插件进行评价和讨论，这不仅有助于其他用户更好地了解模组的质量和适用性，也为开发者提供了宝贵的反馈。curseforge 还提供了便捷的管理工具，如桌面客户端，玩家可以通过客户端一键下载、安装、更新和删除游戏模组和插件。
+                    </p>
+                  </article>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="features" class="VPFeatures VPHomeFeatures" data-v-d82743a8="" data-v-ba861f23="">
+          <h2 class="faq-title" style="text-align: center; font-size: 24px; font-weight: bold; margin-bottom: 20px;">
+           curseforge功能特点
+          </h2>
+          <div class="container" data-v-ba861f23="">
+            <div class="items" data-v-ba861f23="" style="margin-bottom: 40px;">
+              <div class="grid-1 item" data-v-ba861f23="">
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6962852649727169"
+     crossorigin="anonymous"></script>
+<!-- 横向广告 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-6962852649727169"
+     data-ad-slot="2494439074"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+           <div class="grid grid-cols-1 md:grid-cols-3 gap-6" data-v-ba861f23="">
+              <div class="item" data-v-ba861f23="">
+                <span class="VPLink VPFeature" data-v-ba861f23="" data-v-837f6cca="" data-v-8f4dc553="">
+                  <article class="entry-card" data-v-837f6cca="">
+                    <h3 class="entry-title" data-v-837f6cca="">丰富的模组资源</h3>
+                    <p class="entry-desc" data-v-837f6cca="">curseforge 拥有超过50万个模组和插件，覆盖了多种热门游戏，如《我的世界》《魔兽世界》等。无论是从改变游戏界面到优化游戏性能的各种模组，还是提供各种工具和功能的插件，curseforge 都能满足玩家的需求。例如，《我的世界》的模组数量位居社区之首，被部分玩家称为《我的世界》模组界的半边天。</p>
+                  </article>
+                </span>
+              </div>
+              
+              <div class="item" data-v-ba861f23="">
+                <span class="VPLink VPFeature" data-v-ba861f23="" data-v-837f6cca="" data-v-8f4dc553="">
+                  <article class="entry-card" data-v-837f6cca="">
+                    <h3 class="entry-title" data-v-837f6cca="">强大的社区互动</h3>
+                    <p class="entry-desc" data-v-837f6cca="">curseforge 不仅是一个资源下载平台，更是一个活跃的社区。用户可以对模组和插件进行评价和讨论，这有助于其他用户更好地了解模组的质量和适用性，同时也为开发者提供了宝贵的反馈。此外，curseforge提供了评论系统，用户可以在评论区留下对某个作品的评价评分点赞，也可以回复其他用户评论进行讨论或求助。</p>
+                  </article>
+                </span>
+              </div>
+
+              <div class="item" data-v-ba861f23="">
+                <span class="VPLink VPFeature" data-v-ba861f23="" data-v-837f6cca="" data-v-8f4dc553="">
+                  <article class="entry-card" data-v-837f6cca="">
+                    <h3 class="entry-title" data-v-837f6cca="">便捷的管理工具</h3>
+                    <p class="entry-desc" data-v-837f6cca="">curseforge 提供了桌面客户端，玩家可以通过客户端一键下载、安装、更新和删除游戏模组和插件。此外，客户端还支持同步设置、备份存档和创建自定义配置文件等功能。curseforge 的模组管理功能非常强大，玩家可以在客户端或网站上搜索模组，自动下载并安装到正确位置，更新时也会自动提示。</p>
+                  </article>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="VPFooter" data-v-b2cf3e0b="" data-v-f7fc41f4=""><div class="container" data-v-f7fc41f4=""><p class="copyright" data-v-f7fc41f4=""><strong>觉得很不错？那就按住Ctrl+D键组合，把本网站加入你的浏览器收藏夹吧！</strong></p>
+
+    <p class="copyright" data-v-f7fc41f4="">Copyright ©2025 curseforge 数字指南</p>
+         </div></footer>
+
+    </div>
+  </div>
+
+  <script>
+    // 导航栏滚动效果
+    window.addEventListener('scroll', function() {
+      const navbar = document.getElementById('navbar');
+      if (window.scrollY > 50) {
+        navbar.classList.add('shadow-md');
+        navbar.classList.add('py-2');
+        navbar.classList.remove('py-3');
+      } else {
+        navbar.classList.remove('shadow-md');
+        navbar.classList.add('py-3');
+        navbar.classList.remove('py-2');
+      }
+      
+      // 更新导航栏激活状态
+      const sections = document.querySelectorAll('div[id]');
+      const navLinks = document.querySelectorAll('.nav-link');
+      
+      let current = '';
+      
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (pageYOffset >= (sectionTop - 100)) {
+          current = section.getAttribute('id');
+        }
+      });
+      
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${current}`) {
+          link.classList.add('active');
+        }
+      });
+    });
+    
+    // 移动端菜单切换
+    document.getElementById('menu-toggle').addEventListener('click', function() {
+      const mobileMenu = document.getElementById('mobile-menu');
+      mobileMenu.classList.toggle('hidden');
+    });
+    
+    // 平滑滚动
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        
+        // 关闭移动端菜单（如果打开）
+        document.getElementById('mobile-menu').classList.add('hidden');
+        
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+        
+        if (targetElement) {
+          window.scrollTo({
+            top: targetElement.offsetTop - 80,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
